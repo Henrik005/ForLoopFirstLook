@@ -1,7 +1,8 @@
 //Model
-let num = 1
+let num = 2
 let num2 = 20
-let app = document.getElementById('App').innerHTML
+let app = document.getElementById('App')
+
 
 
 
@@ -11,7 +12,7 @@ let app = document.getElementById('App').innerHTML
 //View
 updateView();
 function updateView(){
-app.innerHTML = /*HTML*/` <div></div> <button onclick="printNumbers()">Print Numbers</button>
+app.innerHTML = /*HTML*/`<button onclick="increaseNumber()">Print Numbers</button>
 `
 }
 
@@ -23,15 +24,22 @@ app.innerHTML = /*HTML*/` <div></div> <button onclick="printNumbers()">Print Num
 
 //Controller
 function increaseNumber(){
-for(num = 1; num < num2; num++){
-    num++
-}
-updateView();
+    
+for(num; num <= num2; num++){
+    app.innerHTML+=/*HTML*/ `<div> ${num}</div>`;
 }
 
-printNumber(){
-    
+} 
+
+
+function numberCheck(){
+if(num == 3){
+    increaseNumber() = false;
 }
+}
+
+    
+
 
 
 
