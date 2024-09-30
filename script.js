@@ -1,8 +1,8 @@
 //Model
-let num = 2
-let num2 = 20
+let num = 1
+let num2 = 10
 let app = document.getElementById('App')
-
+let res
 
 
 
@@ -26,7 +26,8 @@ app.innerHTML = /*HTML*/`<button onclick="increaseNumber()">Print Numbers</butto
 function increaseNumber(){
     
 for(num; num <= num2; num++){
-    app.innerHTML+=/*HTML*/ `<div> ${num}</div>`;
+     res = 2* num;
+    app.innerHTML+=/*HTML*/ `<div> ${res}</div>`;
 }
 
 } 
